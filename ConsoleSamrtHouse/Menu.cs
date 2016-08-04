@@ -210,9 +210,9 @@ namespace ConsoleSamrtHouse
                         break;
 
                         case "open":
-                        if (devDictionary[commands[0]] is IdoorOpen)
+                        if (devDictionary[commands[0]] is IDoorOpen)
                         {
-                            ((IdoorOpen)devDictionary[commands[0]]).RefrigeratDoorOpen();
+                            ((IDoorOpen)devDictionary[commands[0]]).RefrigeratDoorOpen();
                         }
                         else
                         {
@@ -221,9 +221,9 @@ namespace ConsoleSamrtHouse
                         }
                         break;
                         case "close":
-                        if (devDictionary[commands[0]] is IdoorOpen)
+                        if (devDictionary[commands[0]] is IDoorOpen)
                         {
-                            ((IdoorOpen)devDictionary[commands[0]]).RefrigeratDoorClose();
+                            ((IDoorOpen)devDictionary[commands[0]]).RefrigeratDoorClose();
                         }
                         else
                         {
@@ -235,7 +235,7 @@ namespace ConsoleSamrtHouse
                         case "fclose":
                         if (devDictionary[commands[0]] is IFrostdoorOpen)
                         {
-                            ((IFrostdoorOpen)devDictionary[commands[0]]).frostDoorStateClose();
+                            ((IFrostdoorOpen)devDictionary[commands[0]]).FrostDoorStateClose();
                         }
                         else
                         {
@@ -247,7 +247,7 @@ namespace ConsoleSamrtHouse
                         case "fopen":
                         if (devDictionary[commands[0]] is IFrostdoorOpen)
                         {
-                            ((IFrostdoorOpen)devDictionary[commands[0]]).frostDoorStateOpen();
+                            ((IFrostdoorOpen)devDictionary[commands[0]]).FrostDoorStateOpen();
                         }
                         else
                         {
